@@ -1,0 +1,97 @@
+[
+    {
+        "name": "tank",
+        "description": "A tank",
+        "properties": {
+            "power": {
+                "type": "boolean",
+                "description": "Whether the tank is on or off"
+            },
+            "direction": {
+                "type": "int",
+                "description": "Tank direction"
+            },
+            "speed": {
+                "type": "int",
+                "description": "Tank speed"
+            }
+        },
+        "methods": {
+            "TurnOn": {
+                "description": "Turns the tank LED on"
+            },
+            "GoForward": {
+                "description": "Go forward"
+            },
+            "GoBack": {
+                "description": "Go back"
+            }, 
+            "GoLeft": {
+                "description": "Go left"
+            }, 
+            "GoRight": {
+                "description": "Go right"
+            },  
+            "GoDance": {
+                "description": "Go dance"
+            }, 
+            "SetSpeed": {
+                "description": "Tank speed",
+                "parameters": {
+                    "speed": {
+                        "type": "number",
+                        "description": "The speed of the tank"
+                    }
+                }                
+            }, 
+            "SetBrightness": {
+                "description": "Tank speed",
+                "parameters": {
+                    "brightness": {
+                        "type": "number",
+                        "description": "The brightness of the tank light"
+                    }
+                }                
+            },
+            "LightShow": {
+                "description": "Tank light show"
+            }
+        }
+    },
+    {
+        "name": "lamp",
+        "description": "A lamp",
+        "properties": {
+            "power": {
+                "type": "boolean",
+                "description": "Whether the lamp is on or off"
+            }
+        },
+        "methods": {
+            "TurnOn": {
+                "description": "Turns the lamp on"
+            }
+        }
+    },    
+    {
+        "name": "speaker",
+        "description": "当前 AI 机器人的扬声器",
+        "properties": {
+            "volume": {
+                "type": "number",
+                "description": "当前扬声器的音量（0-100）"
+            }
+        },
+        "methods": {
+            "SetVolume": {
+                "description": "设置当前扬声器的音量",
+                "parameters": {
+                    "volume": {
+                        "type": "number",
+                        "description": "The volume of the speaker (0-100)"
+                    }
+                }
+            }
+        }
+    }
+]
